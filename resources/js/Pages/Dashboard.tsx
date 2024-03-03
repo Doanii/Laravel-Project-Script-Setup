@@ -1,6 +1,6 @@
 import React from 'react';
-import Welcome from '@/Components/LaravelComponents/Welcome';
 import AppLayout from '@/Layouts/AppLayout';
+import { Button, Input } from '@doanii/ui';
 
 export default function Dashboard() {
   return (
@@ -14,8 +14,11 @@ export default function Dashboard() {
     >
       <div className="py-12">
         <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
-          <div className="bg-white dark:bg-gray-800 overflow-hidden shadow-xl sm:rounded-lg">
-            <Welcome />
+          <div className="bg-white dark:bg-gray-800 overflow-hidden shadow-xl sm:rounded-lg flex flex-col p-4">
+            <Button variant="danger" className="bg-red-500">
+                Test button
+            </Button>
+            <Input type="text" label="Email:" required error="Email is verplicht" placeholder="Email:" />
           </div>
         </div>
       </div>
