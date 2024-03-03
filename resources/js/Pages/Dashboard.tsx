@@ -1,5 +1,6 @@
 import React from 'react';
 import AppLayout from '@/Layouts/AppLayout';
+// @ts-ignore
 import { Button, Input } from '@doanii/ui';
 
 export default function Dashboard() {
